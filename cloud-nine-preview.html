@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cloud Nine</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-color: #F0F9FC;
+  color: #222222;
+  line-height: 1.6;
+}
+header {
+  background-color: #03045E;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0 16px 0;
+  overflow: hidden;
+}
+header .capa {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+header h1 {
+  margin: 16px 0 4px 0;
+  font-size: 2rem;
+}
+header p {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.9;
+}
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.post {
+  background-color: #FFFFFF;
+  color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 24px;
+  border: none;
+}
+.post-icone {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+h2 { margin-top: 0; color: #0077B6; }
+.autor { font-style: italic; opacity: 0.7; margin-top: -8px; }
+footer { text-align: center; padding: 16px; opacity: 0.6; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<img src="data:image/png;base64,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" alt="Capa do blog Cloud Nine" class="capa">
+<h1>Cloud Nine</h1>
+<p>Tudo sobre computação em nuvem, sem complicação</p>
+</header>
+<main>
+<article class="post">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAABZUlEQVR4nO3b2xGCMBCFYXGsgg5oiB6lIKlA6vAhM+oQCMlmSTaH87+qcT+Dl0Htnq/37Urdaw9QOoLRIxg9gtEjGD2C0SMYPYLRIxg9gtF71B7g1zj0exdN86J1L/XBAad/nXx5TXAMdfMmOew6YAHVv7mMXeFFK1ObuU5psJZWvFpRsK5WtmY58BlawcqFwOdpU9cvAT5bm3Qv+m9LZXji1MAWnOPQH745K4AtUOPLfQ5b0x7OkwW2pnWFp5KDbWpdgdmEYMta196EErB9rWtzzsud4kkGt7K9Ln9a7jB6aeC2jmfXambuMHoEo0cwemlgxS+1irWamTuMXjK4raPan5Y7HFErm7w5p3CH7Zv3JpQf0pbNgdmynsM2zeGpcl+0ZOZpXk56sA6X7bT+ihd5bsAfSOukQuQjqAb+tgmImebwd1rilf/TBxuPHzzQIxg9gtEjGD2C0SMYPYLRIxg9gtH7ALfjYcvcsT8ZAAAAAElFTkSuQmCC" alt="Ícone do blog Cloud Nine" class="post-icone">
+<h2>Minha primeira subida para a nuvem</h2>
+<p class="autor">Por: Estudante Alura</p>
+<p>Migrar aplicações para a nuvem parecia complicado até eu dar o primeiro passo. Vou registrar aqui cada aprendizado sobre servidores, escalabilidade e deploy.</p>
+</article>
+</main>
+<footer><p>&copy; 2026 Cloud Nine</p></footer>
+</body>
+</html>
